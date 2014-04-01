@@ -1,0 +1,145 @@
+object FMain: TFMain
+  Left = 0
+  Top = 0
+  Caption = #1057#1090#1077#1075#1072#1085#1086#1075#1088#1072#1092#1080#1103
+  ClientHeight = 234
+  ClientWidth = 582
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Icon.Data = {
+    0000010001002020100000000000E80200001600000028000000200000004000
+    0000010004000000000080020000000000000000000000000000000000000000
+    000000008000008000000080800080000000800080008080000080808000C0C0
+    C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF009999
+    9999999999999999999999999999999999999999999999999999999999999900
+    0000000000000000000000000099990000009999999999999999000000999900
+    0000999999999999999900000099990000009999999999999999000000999900
+    0000999999999999999900000099990000009999900000009999000000999900
+    0000999990000000999900000099990000009999900000009999000000999900
+    0000999990000000999900000099990000009999900099999999000000999900
+    0000999990009999999900000099990000009999900099999999000000999900
+    0000999990009999999900000099990000009999900099999999000000999900
+    0000999990000000000000000099990000009999900000000000000000999900
+    0000999990000000000000000099990000009999900000000000000000999900
+    0000999990000000000000000099990000009999900000009999000000999900
+    0000999990000000999900000099990000009999900000009999000000999900
+    0000999990000000999900000099990000009999999999999999000000999900
+    0000999999999999999900000099990000009999999999999999000000999900
+    0000999999999999999900000099990000000000000000000000000000999999
+    9999999999999999999999999999999999999999999999999999999999990000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000000000000000000}
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnActivate = FormActivate
+  OnCanResize = FormCanResize
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Image1: TImage
+    Left = 10
+    Top = 21
+    Width = 175
+    Height = 175
+    Center = True
+    Proportional = True
+    Stretch = True
+    OnClick = Image1Click
+  end
+  object PageControl1: TPageControl
+    Left = 201
+    Top = 8
+    Width = 352
+    Height = 200
+    ActivePage = TSWrite
+    TabOrder = 0
+    object TSWrite: TTabSheet
+      Caption = #1047#1072#1087#1080#1089#1100' '#1080#1085#1092#1086#1088#1084#1072#1094#1080#1080
+      object Label1: TLabel
+        Left = 159
+        Top = 34
+        Width = 91
+        Height = 13
+        Caption = #1042#1099#1073#1088#1072#1085#1085#1099#1077' '#1092#1072#1081#1083':'
+      end
+      object Memo1: TMemo
+        Left = 3
+        Top = 3
+        Width = 150
+        Height = 166
+        ScrollBars = ssBoth
+        TabOrder = 0
+      end
+      object ListBox1: TListBox
+        Left = 159
+        Top = 48
+        Width = 182
+        Height = 89
+        ItemHeight = 13
+        TabOrder = 1
+      end
+      object BSelectFiles: TButton
+        Left = 159
+        Top = 3
+        Width = 182
+        Height = 25
+        Caption = #1042#1099#1073#1088#1072#1090#1100' '#1092#1072#1081#1083#1099
+        TabOrder = 2
+        OnClick = BSelectFilesClick
+      end
+      object BWrite: TButton
+        Left = 159
+        Top = 144
+        Width = 182
+        Height = 25
+        Caption = #1047#1072#1087#1080#1089#1072#1090#1100
+        TabOrder = 3
+        OnClick = BWriteClick
+      end
+    end
+    object TSRead: TTabSheet
+      Caption = #1057#1095#1080#1090#1099#1074#1072#1085#1080#1077' '#1080#1085#1092#1086#1088#1084#1072#1094#1080#1080
+      ImageIndex = 1
+      object ListBox2: TListBox
+        Left = 3
+        Top = 3
+        Width = 254
+        Height = 158
+        ItemHeight = 13
+        TabOrder = 0
+      end
+      object BReadMsg: TButton
+        Left = 263
+        Top = 3
+        Width = 75
+        Height = 25
+        Caption = #1057#1086#1086#1073#1097#1077#1085#1080#1077
+        TabOrder = 1
+        OnClick = BReadMsgClick
+      end
+      object BGetFile: TButton
+        Left = 263
+        Top = 34
+        Width = 75
+        Height = 25
+        Caption = #1060#1072#1081#1083
+        TabOrder = 2
+        OnClick = BGetFileClick
+      end
+      object BUpdate: TButton
+        Left = 263
+        Top = 65
+        Width = 75
+        Height = 25
+        Caption = #1054#1073#1085#1086#1074#1080#1090#1100
+        TabOrder = 3
+        OnClick = BUpdateClick
+      end
+    end
+  end
+end
